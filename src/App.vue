@@ -1,9 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <img src="./assets/logo.png">
+        <img src="./assets/f1-logo.png">
+        <h1>Welcome to Formula 1 vue 4 app!! </h1>
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col">
+                    <b-navbar toggleable="md" type="dark" variant="info">
+                        <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+                        <b-navbar-brand href="#">NavBar</b-navbar-brand>
+                        <b-collapse is-nav id="nav_collapse">
+                            <b-navbar-nav>
+                                <b-nav-item to="/">Home</b-nav-item>
+                                <b-nav-item to="/drivers">Drivers</b-nav-item>
+                            </b-navbar-nav>
+                        </b-collapse>
+                    </b-navbar>
+                </div>
+            </div>
+        </div>
     <router-view/>
   </div>
 </template>
