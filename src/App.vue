@@ -1,18 +1,28 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-        <img src="./assets/f1-logo.png">
-        <h1>Welcome to Formula 1 vue 4 app!! </h1>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-center">
+                    <h1>Formula vue </h1>
+                </div>
+                <div class="col">
+                    <div class="mt-5 mb-5">
+                        <img width="80" src="./assets/logo.png">
+                        <img width="160" src="./assets/f1-logo.png">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row justify-content-md-center">
                 <div class="col">
                     <b-navbar toggleable="md" type="dark" variant="info">
                         <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-                        <b-navbar-brand href="#">NavBar</b-navbar-brand>
                         <b-collapse is-nav id="nav_collapse">
                             <b-navbar-nav>
                                 <b-nav-item to="/">Home</b-nav-item>
                                 <b-nav-item to="/drivers">Drivers</b-nav-item>
+                                <b-nav-item to="/contact">Contact</b-nav-item>
                             </b-navbar-nav>
                         </b-collapse>
                     </b-navbar>
@@ -20,7 +30,7 @@
             </div>
         </div>
     <router-view/>
-  </div>
+    </div>
 </template>
 
 <style lang="scss">

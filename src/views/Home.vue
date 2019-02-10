@@ -46,7 +46,7 @@
 				// el.style.height = 0
 			},
 			enter: function (el, done) {
-				console.log(el)
+				// console.log(el)
 				var delay = el.dataset.index * 150
 				setTimeout(function () {
 					Velocity(
@@ -69,7 +69,7 @@
 		},
 		mounted() {
             this.$http.get('http://ergast.com/api/f1/2016.json').then(result => {
-                console.log(result.data.MRData.RaceTable.Races);
+                // console.log(result.data.MRData.RaceTable.Races);
 				this.races = result.data.MRData.RaceTable.Races;
             }, error => {
                 console.error(error);

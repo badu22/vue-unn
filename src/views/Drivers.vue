@@ -47,7 +47,7 @@
 				// el.style.height = 0
 			},
 			enter: function (el, done) {
-				console.log(el)
+				// console.log(el)
 				var delay = el.dataset.index * 150
 				setTimeout(function () {
 					Velocity(
