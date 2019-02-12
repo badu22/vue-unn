@@ -11,6 +11,8 @@ Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
 Vue.use(VueResource);
 Vue.use(VeeValidate);
+// Vue.http.options.emulateJSON = true;
+
 
 
 new Vue({

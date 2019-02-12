@@ -2,7 +2,7 @@
  
 
 	<div class="contact mt-5">
-		<h1>Contact</h1>
+		<h1>Contact frontend validation</h1>
 		<div class="container">
 			<div class="row">
 				<section class="col-sm-12 col-md-8 offset-md-2">
@@ -80,8 +80,7 @@ export default {
             this.$validator.validate().then(valid => {
                 if (valid) {
 					this.success = valid;
-					this.formated = JSON.stringify(this.form);
-                    console.log('SUCCESS!! :-)\n\n' + JSON.stringify(this.form))
+					console.log('SUCCESS!! :-)\n\n' + JSON.stringify(this.form));
                 }
             });
 			// this.form.email = '';

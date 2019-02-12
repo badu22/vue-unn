@@ -22,7 +22,8 @@
                             <b-navbar-nav>
                                 <b-nav-item to="/">Home</b-nav-item>
                                 <b-nav-item to="/drivers">Drivers</b-nav-item>
-                                <b-nav-item to="/contact">Contact</b-nav-item>
+                                <b-nav-item to="/contact">Contact val fornt</b-nav-item>
+                                <b-nav-item to="/contactAlt">Contact val back</b-nav-item>
                             </b-navbar-nav>
                         </b-collapse>
                     </b-navbar>
